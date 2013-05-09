@@ -18,8 +18,8 @@ var path = d3.geo.path()
 var title = d3.select("h1");
 
 queue()
-    .defer(d3.json, "./data/world-110m.json")
-    .defer(d3.tsv, "./data/world-country-names.tsv")
+    .defer(d3.json, "data/world-110m.json")
+    .defer(d3.tsv, "data/world-country-names.tsv")
     .await(ready);
 
 function ready(error, world, names) {
