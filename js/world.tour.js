@@ -40,7 +40,7 @@ function ready(error, world, names) {
 
   (function transition() {
     d3.transition()
-        .duration(1250)
+        .duration(500)
         .each("start", function() {
           title.text(countries[i = (i + 1) % n].name);
         })
